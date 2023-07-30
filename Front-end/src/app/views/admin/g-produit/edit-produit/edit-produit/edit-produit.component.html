@@ -1,0 +1,143 @@
+<div class="content-wrapper">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+      <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Update Produit</h4>
+
+      <!-- Basic Layout & Basic with Icons -->
+      <div class="row">
+        <!-- Basic Layout -->
+        <div class="col-xxl">
+          <div class="card mb-4">
+            <div class="card-header d-flex align-items-center justify-content-between">
+         
+            </div>
+            <div class="card-body">
+              <form #f="ngForm" (ngSubmit)="updateproduit(f)">
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="basic-default-name">title</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="basic-default-name" 
+                    [(ngModel)]="datau.titre"
+                    placeholder="titre"
+                    required
+                    name="titre"
+                    #titre="ngModel" ngModel
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="basic-default-company">description</label>
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="basic-default-company"
+                      [(ngModel)]="datau.descreption"
+                      placeholder="descreption"
+                      required
+                      name="descreption"
+                      #descreption="ngModel" ngModel
+                      
+                    />
+                  </div>
+                </div>
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-default-company">catégorie</label>
+                    <div class="col-sm-10">
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="basic-default-company"
+                      [(ngModel)]="datau.categorie"
+                      placeholder="categorie"
+                      required
+                      name="categorie"
+                      #categorie="ngModel" ngModel
+                      
+                    />
+                    </div>
+                  </div>
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="basic-default-phone"> size</label>
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="basic-default-company"
+                      [(ngModel)]="datau.size"
+                      placeholder="size"
+                      required
+                      name="size"
+                      #size="ngModel" ngModel
+                      
+                    />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-default-phone"> color</label>
+                    <div class="col-sm-10">
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="basic-default-company"
+                      [(ngModel)]="datau.color"
+                      placeholder="color"
+                      required
+                      name="color"
+                      #color="ngModel" ngModel
+                      
+                    />
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-default-phone"> prix</label>
+                    <div class="col-sm-10">
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="basic-default-company"
+                      [(ngModel)]="datau.prix"
+                      placeholder="prix"
+                      required
+                      name="prix"
+                      #prix="ngModel" ngModel
+                      
+                    />
+                    </div>
+                  </div>
+
+
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label" for="basic-default-phone"> instock</label>
+                    <div class="col-sm-10">
+                      <input
+                      type="text"
+                      class="form-control"
+                      id="basic-default-company"
+                      [(ngModel)]="datau.instock"
+                      placeholder="instock"
+                      required
+                      name="instock"
+                      #instock="ngModel" ngModel
+                      
+                    />
+                    </div>
+                  </div>
+                  <div class="alert alert-success" role="alert"
+                  *ngIf="messageSuccess">
+                  {{messageSuccess}}
+                  </div>
+                  
+              
+                <div class="row justify-content-end">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+

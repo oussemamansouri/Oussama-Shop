@@ -1,0 +1,47 @@
+<!-- SECTION -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <!-- Billing Details -->
+                <div class="billing-details">
+                    <div class="section-title">
+                        <h3 class="title">Billing address</h3>
+                    </div>
+                    <form #f="ngForm" (ngSubmit)="addo(f)">
+            
+                        <div class="form-group">
+                    
+                          <label for="exampleFormControlInput1">quantite</label>
+                          <input type="text" class="form-control" placeholder="quantite" required name="quantite" #quantite="ngModel" ngModel minlength="2" maxlength="20">
+                        </div>
+                       
+                    
+                    <!-- Email validation start here -->
+                    
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">amount</label>
+                            <input type="text" class="form-control" placeholder="amount"  required name="amount" #amount="ngModel" ngModel>
+                          </div>
+                          
+                    <!-- Email validation end here -->
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">adress</label>
+                      <input type="text" class="form-control form-control-user"
+                           placeholder="adress" name="adress" #adress="ngModel" ngModel>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">status</label>
+                    <input type="text" class="form-control" placeholder="status"  required name="status" #status="ngModel" ngModel>
+                  </div>
+                   
+                       <button class="btn btn-primary" [disabled]="f.invalid">Send</button>
+                      </form>
+               
+                    
+                    
+                
+                

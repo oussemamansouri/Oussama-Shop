@@ -1,0 +1,43 @@
+<style type="text/css">
+    
+  .loginbox{ background-color: black; margin: auto;  min-width: 300px; border-radius: 20px; border-style: solid; height: 300px; color: white; width: 27%;}	
+  .input{  border-bottom-color: black ; width: 60%; margin: auto; border-radius: 20px;  height: 30px; font-size: 15px; padding-left: 15px; color: black;  }
+  a{  color: rgb(255, 255, 255);      } 
+   a:hover{  color: rgb(188, 0, 0); }
+  
+  .bottun1{ background-color: #BE0A16; border-radius: 20px; width: 62%; height: 32px;  color: white;  }
+  .bottun1:hover{   opacity: 0.9;      }
+  label{ margin: auto; width: 20%;   }
+  h2{ color: white;   }
+  
+  h2{ margin-left: -30px; margin-bottom: 20px;  }
+  .mar{  margin-left: 5px;     }
+  </style>
+  <br>
+  
+  <div class="loginbox">  
+    <form #f="ngForm" (ngSubmit)="register(f)" align="center">
+  <BR>
+      <h2 class="mar"><i class="fa-solid fa-user"></i></h2>
+  
+    
+         
+          <input class="input" placeholder="Username" type="text" name="username" ngModel #username="ngModel" required>
+          <br><br>
+    
+      
+      <input class="input" type="email"placeholder="Email" name="email" ngModel #email="ngModel" email required>
+    
+      <br><br>
+     
+      <input class="input" type="password" placeholder="Password" name="password" ngModel #password="ngModel" required>
+      <br><br>
+  
+    <div class="alert alert-danger" *ngIf="messageErr">{{messageErr}}</div>
+  
+    <button type="submit" class="bottun1">Register</button>
+  <br>
+  </form>
+  
+      </div>
+      <br><BR>
