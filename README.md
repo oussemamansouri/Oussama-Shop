@@ -1,6 +1,3 @@
 # Oussama Shop
-I created an E-commerce platform using this stack (Sequelize, Express.js, Angular, and Node.js). 
-These technologies provided a robust and scalable solution. MongoDB efficiently stored and retrieved product information, while Express.js offered a flexible server-side framework.
-AngularJS enhanced the user interface, creating a dynamic and interactive shopping experience.
-Node.js ensured high performance and seamless communication between the server and client, resulting in a secure and feature-rich platform.
+I created an e-commerce platform using MongoDB as the primary database with Sequelize, Express.js, Angular, and Node.js for a robust and scalable solution. MongoDB efficiently stored and retrieved product information, while Express.js provided a flexible server-side framework. AngularJS enhanced the user interface, and Node.js ensured high performance. Additionally, I developed an alternative version of the platform using Sequelize, offering a SQL-based database option.
 #### NOTE: this is not the final version, it's just a part of the project (no best practice), for the final version with a good best practice you can contact me 
