@@ -1,4 +1,4 @@
-# E-commerce
+# Oussama Shop
 I created an E-commerce platform using the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js). 
 These technologies provided a robust and scalable solution. MongoDB efficiently stored and retrieved product information, while Express.js offered a flexible server-side framework.
 AngularJS enhanced the user interface, creating a dynamic and interactive shopping experience.
